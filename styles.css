@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .full-page-component {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .full-page-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(203, 201, 201);
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: rgb(88, 87, 87);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background-color:  rgb(54, 53, 53);
+    color: white;
+  }
+
+  
