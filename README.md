@@ -16,10 +16,19 @@ This project implements a full-page component with an image background, a transl
 
 ## Notes
 
-- The component is designed to be full-page, full-width, and full-height, ensuring it works on all screen sizes.
-- The image used in the background should be provided by the FE engineer and referenced in the `src` attribute of the `<img>` tag in the HTML file.
+- The HTML structure consists of a container div with a full-page image, an overlay, and content (title and button).
+
+- The CSS ensures the image covers the entire viewport, adds a translucent overlay, and centers the content vertically and horizontally. It also sets overflow: hidden; on the body and HTML to prevent any potential small white space at the bottom of the page.
+
+- The JavaScript adds an event listener to the button to display an alert when clicked.
+
+- The image needs to be provided by the FE engineer and referenced in the HTML src attribute.
+
+- CSS properties like object-fit: cover ensure the image is optimized for different screen sizes.
+
 - The overlay's transparency can be adjusted by modifying the RGBA value in the CSS.
-- The component utilizes modern CSS features and native JavaScript, assuming the usage of the latest browser features and APIs without worrying about cross-browser compatibility.
+
+- This solution utilizes modern CSS features and native JavaScript for simplicity and efficiency. It assumes the usage of the latest native browser features and APIs, without worrying about cross-browser compatibility.
 
 ## License
 
